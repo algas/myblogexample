@@ -1,0 +1,13 @@
+<% wrap_layout :layout do %>
+  <article> 
+    <h1><%= current_page.title %> </h1>
+    <span>Posted on <%= current_page.date.strftime('%Y-%m-%d') %>
+      by <% current_page.authors.each do |author| %><%= link_to_author(author) %><% end %>
+    </span>
+    <%= yield %>
+    <h2>Tags</h2>
+    <% current_page.tags.each do |tag| %>
+      <%= link_to tag, tag_path(tag) %>
+    <% end %>
+  </article>
+<% end %>

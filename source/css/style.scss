@@ -1,0 +1,44 @@
+$base_margin: 50px;
+nav {
+  background-color: #ededed;
+}
+h1 {
+  font-size: 20px;
+}
+h2 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 16px;
+}
+h4 {
+  font-size: 14px;
+}
+body {
+  margin-top: $base_margin + 20px;
+  font-size: 12px;
+}
+footer {
+  margin: 50px 20px;
+}
+article img {
+  margin: 0;
+  height: auto;
+  max-width: 640px;
+  width: auto;
+}
+table {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+article table {
+  border: 1px solid #e7e7e7;
+  margin: 0 -1px 24px 0;
+  text-align: left;
+  width: 100%;
+}
